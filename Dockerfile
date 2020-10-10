@@ -37,3 +37,5 @@ USER jovyan
 
 # additional packages could be installed here
 #RUN npm install -g jsdom d3 ijavascript-plotly plotly-notebook-js
+
+COPY notebook/*.ipynb ./
