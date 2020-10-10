@@ -5,7 +5,7 @@ USER root
 # prerequisites with apt-get
 # we do install python(2) here because
 # some npm build part named gyp still requires it
-RUN apt-get update && apt-get install -y --no-install-recommends gcc g++ make python
+RUN apt-get update && apt-get install -y --no-install-recommends gcc g++ make python && rm -rf /var/lib/apt/lists/*
 
 
 # !!! dirty trick !!!
